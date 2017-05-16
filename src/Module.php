@@ -1,6 +1,6 @@
 <?php
 
-namespace restapi;
+namespace RestApi;
 
 use Zend\Mvc\MvcEvent;
 

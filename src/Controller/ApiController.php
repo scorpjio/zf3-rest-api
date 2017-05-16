@@ -1,6 +1,6 @@
 <?php
 
-namespace restapi\Controller;
+namespace RestApi\Controller;
 
 use Zend\Mvc\Controller\AbstractRestfulController;
 use Zend\View\Model\JsonModel;

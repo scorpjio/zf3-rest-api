@@ -1,6 +1,6 @@
 <?php
 
-namespace restapi\Controller;
+namespace RestApi\Controller;
 
 class RouteNotFoundController extends ApiController
 {

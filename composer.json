@@ -29,5 +29,10 @@
     "require": {
         "firebase/php-jwt": "^4.0",
         "zendframework/zend-json": "^3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "RestApi\\": "src/"
+        }
     }
 }

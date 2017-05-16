@@ -13,29 +13,16 @@ The recommended way to install composer packages is:
 ```
 composer require multidots/zf3-rest-api
 ```
-After installation, go to root path and open composer.json file and add following.
-```php
-"autoload": {
-        "psr-4": {
-            ....
-            // add following line.
-            "restapi\\": "vendor/multidots/zf3-rest-api/src/"
-        }
-    },
-```
-Now Execute following command
-```php
-composer dump-autoload
-```
-Now copy this file "vender/restapi/config/restapi.global.php" and paste to root "config/autoload/restapi.global.php"
 
-Now add this 'restapi' to modules.config.php file.
+Now copy this file "vender/multidots/zf3-rest-api/config/restapi.global.php" and paste to root "config/autoload/restapi.global.php"
+
+Now add this 'RestApi' to modules.config.php file.
 
 ```php
 return [
     ....
     //add this 
-    'restapi'
+    'RestApi'
 ];
 ```
 
@@ -44,7 +31,7 @@ You just need to create your API related controller and extend it to `ApiControl
 ```php
 namespace Application\Controller;
 
-use restapi\Controller\ApiController;
+use RestApi\Controller\ApiController;
 
 /**
  * Foo Controller
@@ -194,7 +181,7 @@ Let's create an API which returns a list of articles with basic details like id 
 
 namespace Application\Controller;
 
-use restapi\Controller\ApiController;
+use RestApi\Controller\ApiController;
 
 /**
  * Articles Controller
