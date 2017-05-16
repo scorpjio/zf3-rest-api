@@ -1,0 +1,33 @@
+{
+    "name": "multidots/zf3-rest-api",
+    "description": "Zend Framework 3 module to build REST APIs",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/multidots/zf3-rest-api",
+    "authors": [
+        {
+            "name": "Multidots",
+            "homepage": "http://www.multidots.com",
+            "role": "Author"
+        },
+        {
+            "name": "Community",
+            "homepage": "https://github.com/multidots/zf3-rest-api/graphs/contributors"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/multidots/zf3-rest-api/issues",
+        "source": "https://github.com/multidots/zf3-rest-api"
+    },
+    "keywords": [
+        "zf3",
+        "zend framework",
+        "cors",
+        "rest",
+        "rest api"
+    ],
+    "require": {
+        "firebase/php-jwt": "^4.0",
+        "zendframework/zend-json": "^3.0"
+    }
+}
