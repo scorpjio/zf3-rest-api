@@ -45,13 +45,13 @@ class FooController extends ApiController
      */
     public function barAction()
     {
-		// your action logic
+        // your action logic
 
-		// Set the HTTP status code. By default, it is set to 200
-		$this->httpStatusCode = 200;
+        // Set the HTTP status code. By default, it is set to 200
+        $this->httpStatusCode = 200;
 
-		// Set the response
-		$this->apiResponse['you_response'] = 'your response data';
+        // Set the response
+        $this->apiResponse['you_response'] = 'your response data';
 
         return $this->createResponse();
     }
@@ -61,7 +61,7 @@ You can define your logic in your action function as per your need. For above ex
 ```json
 {"status":"OK","result":{"you_response":"your response data"}}
 ```
-The URL for above example will be `http://yourdomain.com/foo/bar`. You can customize it by setting the your module.config.php as following`.
+The URL for above example will be `http://yourdomain.com/foo/bar`. You can customize it by setting the your module.config.php as following.
 
 ```php
 'router' => [
@@ -72,8 +72,8 @@ The URL for above example will be `http://yourdomain.com/foo/bar`. You can custo
                     'route'    => '/',
                     'defaults' => [
                         'controller' => Controller\FooController::class,
-                        'action'     => 'bar',
-                        'isAuthorizationRequired'    => true // set true if this api Required JWT Authorization.
+                        'action' => 'bar',
+                        'isAuthorizationRequired' => true // set true if this api Required JWT Authorization.
                     ],
                 ],
             ],
@@ -120,14 +120,14 @@ You can check for presence of auth token in API request. You need to define a fl
                     'defaults' => [
                         'controller' => Controller\FooController::class,
                         'action'     => 'bar',
-                        'isAuthorizationRequired'    => true // set true if this api Required JWT Authorization.
+                        'isAuthorizationRequired' => true // set true if this api Required JWT Authorization.
                     ],
                 ],
             ],
         ],
     ],
 ```
-```
+
 Above API method will require auth token in request. You can pass the auth token in either header, in GET parameter or in POST field.
 
 If you want to pass token in header, use below format.
@@ -201,6 +201,7 @@ class ArticlesController extends ApiController
                 ->findBy([], ['id'=>'ASC']);
 
         $this->apiResponse['articles'] = $articles;
+        return $this->createResponse();
     }
 }
 ```
