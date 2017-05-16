@@ -142,22 +142,22 @@ In case of GET or POST parameter, pass the token in `token` parameter.
 #### Generate jwt token
 This plugin provides methos to generate jwt token and sign with same key and algorithm. Use `$this->generate()` method wherever required. Most probably, you will need this in user login and register API. See below example,
 ```php
-    public function login()
-    {
-        /**
-         * process your data and validate it against database table
-         */
+public function login()
+{
+    /**
+     * process your data and validate it against database table
+     */
 
-        // generate token if valid user
-        // $this->tokenPayload you can access user details.
-        $this->tokenPayload = ['email' => $user->email, 'name' => $user->name];
-        $this->generateToken();
+    // generate token if valid user
+    // $this->tokenPayload you can access user details.
+    $this->tokenPayload = ['email' => $user->email, 'name' => $user->name];
+    $this->generateToken();
 
-        // $this->token through you can get token.
-        $this->apiResponse['token'] = $this->token;
-        $this->apiResponse['message'] = 'Logged in successfully.';
-        return $this->createResponse();
-    }
+    // $this->token through you can get token.
+    $this->apiResponse['token'] = $this->token;
+    $this->apiResponse['message'] = 'Logged in successfully.';
+    return $this->createResponse();
+}
 ```
 
 ## Response format
