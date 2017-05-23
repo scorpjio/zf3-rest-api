@@ -16,12 +16,12 @@ composer require multidots/zf3-rest-api
 
 Now copy this file "vender/multidots/zf3-rest-api/config/restapi.global.php" and paste to root "config/autoload/restapi.global.php"
 
-Now add this 'RestApi' to modules.config.php file.
+If you do not setup at time of package installation then add this 'RestApi' to modules.config.php file.
 
 ```php
 return [
     ....
-    //add this 
+    //add this if not available
     'RestApi'
 ];
 ```
