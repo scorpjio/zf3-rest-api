@@ -1,13 +1,13 @@
-# RestApi plugin for Zend Framework 3
+# RestApi module for Zend Framework 3
 
 ## Requirements
-This plugin has the following requirements:
+This module has the following requirements:
 
 * Zend Framework 3 or greater.
 * PHP 7 or greater.
 
 ## Installation
-You can install this plugin into your Zend Framework application using [composer](http://getcomposer.org).
+You can install this module into your Zend Framework application using [composer](http://getcomposer.org).
 
 The recommended way to install composer packages is:
 ```
@@ -83,7 +83,7 @@ The URL for above example will be `http://yourdomain.com/foo/bar`. You can custo
 Simple :)
 
 ## Configurations
-This plugin provides several configurations related to Response, Request and `JWT` authentication. The default configurations are in previously you copy and past file this restapi.global.php have configurations`.
+This module provides several configurations related to Response, Request and `JWT` authentication. The default configurations are in previously you copy and past file this restapi.global.php have configurations`.
 ```php
 <?php
 
@@ -140,7 +140,7 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoidmFsdWUif
 In a case of GET or POST parameter, pass the token in `token` parameter.
 
 #### Generate jwt token
-This plugin provides methods to generate jwt token and sign with same key and algorithm. Use `$this->generate()` method wherever required. Most probably, you will need this in to user login and register API. See below example,
+This module provides methods to generate jwt token and sign with same key and algorithm. Use `$this->generate()` method wherever required. Most probably, you will need this in to user login and register API. See below example,
 ```php
 public function login()
 {
@@ -170,7 +170,7 @@ The response format of API is `json` and its structure is defined as below.
 ```
 
 ## Examples
-Below one example to understand how this plugin works.
+Below one example to understand how this module works.
 
 ### Retrieve articles
 Let's create an API which returns a list of articles with basic details like id and title. Our controller will look like,
@@ -226,4 +226,4 @@ The response of above API call will look like,
 }
 ```
 ## Reporting Issues
-If you have a problem with this plugin or any bug, please open an issue on [GitHub](https://github.com/multidots/zf3-rest-api/issues).
+If you have a problem with this module or any bug, please open an issue on [GitHub](https://github.com/multidots/zf3-rest-api/issues).
