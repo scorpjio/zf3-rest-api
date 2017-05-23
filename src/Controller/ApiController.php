@@ -109,7 +109,7 @@ class ApiController extends AbstractRestfulController
      */
     protected function generateJwtToken($payload)
     {
-        if (!is_array($payload) || !is_object($payload)) {
+        if (!is_array($payload) && !is_object($payload)) {
             $this->token = false;
             return false;
         }
