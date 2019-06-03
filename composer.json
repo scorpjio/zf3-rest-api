@@ -1,23 +1,22 @@
 {
-    "name": "multidots/zf3-rest-api",
+    "name": "scorpjio/zf3-rest-api",
     "description": "Zend Framework 3 module to build REST APIs",
     "type": "library",
     "license": "MIT",
-    "homepage": "https://github.com/multidots/zf3-rest-api",
+    "homepage": "https://github.com/scorpjio/zf3-rest-api",
     "authors": [
         {
-            "name": "Multidots",
-            "homepage": "http://www.multidots.com",
+            "name": "scorpj",
             "role": "Author"
         },
         {
             "name": "Community",
-            "homepage": "https://github.com/multidots/zf3-rest-api/graphs/contributors"
+            "homepage": "https://github.com/scorpjio/zf3-rest-api/graphs/contributors"
         }
     ],
     "support": {
-        "issues": "https://github.com/multidots/zf3-rest-api/issues",
-        "source": "https://github.com/multidots/zf3-rest-api"
+        "issues": "https://github.com/scorpjio/zf3-rest-api/issues",
+        "source": "https://github.com/scorpjio/zf3-rest-api"
     },
     "keywords": [
         "zf3",
