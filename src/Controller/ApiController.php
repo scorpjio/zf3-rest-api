@@ -74,7 +74,7 @@ class ApiController extends AbstractRestfulController
             }
         } else {
             $response->setStatusCode(400);
-            $jsonModelArr = ['status' => 'NOK', 'result' => ['error' => 'Require copy this file vender\multidots\zf3-rest-api\config\restapi.global.php and paste to root config\autoload\restapi.global.php']];
+            $jsonModelArr = ['status' => 'NOK', 'result' => ['error' => 'Require copy this file vender\scorpjio\zf3-rest-api\config\restapi.global.php and paste to root config\autoload\restapi.global.php']];
         }
 
         $response->getHeaders()->addHeaderLine('Content-Type', 'application/json');

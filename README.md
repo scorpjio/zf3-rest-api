@@ -11,10 +11,10 @@ You can install this module into your Zend Framework application using [composer
 
 The recommended way to install composer packages is:
 ```
-composer require multidots/zf3-rest-api
+composer require scorpjio/zf3-rest-api
 ```
 
-Now copy this file "vender/multidots/zf3-rest-api/config/restapi.global.php" and paste to root "config/autoload/restapi.global.php"
+Now copy this file "vendor/scorpjio/zf3-rest-api/config/restapi.global.php" and paste to root "config/autoload/restapi.global.php"
 
 If you do not setup at the time of package installation then add this 'RestApi' to modules.config.php file.
 
@@ -226,4 +226,4 @@ The response of above API call will look like,
 }
 ```
 ## Reporting Issues
-If you have a problem with this module or any bug, please open an issue on [GitHub](https://github.com/multidots/zf3-rest-api/issues).
+If you have a problem with this module or any bug, please open an issue on [GitHub](https://github.com/scorpjio/zf3-rest-api/issues).
